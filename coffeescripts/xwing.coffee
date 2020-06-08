@@ -215,9 +215,6 @@ class exportObj.SquadBuilder
                     <br>
                     <select class="game-type-selector">
                         <option value="standard">Extended</option>
-                        <option value="hyperspace">Hyperspace</option>
-                        <option value="epic">Epic</option>
-                        <option value="quickbuild">Quickbuild</option>
                     </select>
                 </div>
                 <div class="span4 points-display-container">

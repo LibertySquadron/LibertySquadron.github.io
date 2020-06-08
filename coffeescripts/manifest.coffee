@@ -7980,11 +7980,11 @@ exportObj.manifestByExpansion =
             type: 'ship'
             count: 2
         }
-        {
-            name: 'Kihraxz Fighter'
-            type: 'ship'
-            count: 3
-        }
+        #{
+        #    name: 'Kihraxz Fighter'
+        #    type: 'ship'
+        #    count: 3
+        #}
         {
             name: 'Aggressor'
             type: 'ship'

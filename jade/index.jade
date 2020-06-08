@@ -3,7 +3,7 @@ doctype html
 
 html
   head
-    title YASB 2.0
+    title Liberty Squadron Ban League Builder
     meta(charset="utf-8")
 
     link(rel="apple-touch-icon", sizes="180x180", href="apple-touch-icon.png")
@@ -51,32 +51,17 @@ html
           a#republicTab('data-toggle'="tab", href='#republicContent') <i class="xwing-miniatures-font xwing-miniatures-font-republic"></i>
         li
           a#separatistTab('data-toggle'="tab", href='#separatistContent') <i class="xwing-miniatures-font xwing-miniatures-font-separatists"></i>
-
+       
         li.main-top-nav-bar-button-right
-          a(href='https://github.com/raithos/xwing/issues/new', target='_blank') Submit Bug/Feature Request 
-        li.main-top-nav-bar-button-right
-          a#login-logout.hidden(href='#')
-            span.hide-authenticated
-              i.fa.fa-sign-in-alt.hidden-phone.hidden-tablet
-              | Log In
-            span.show-authenticated
-              i.fa.fa-sign-out-alt.hidden-phone.hidden-tablet
-              | Log Out
-        li.main-top-nav-bar-button-right
-          a#auth-status(href='#')
-            i.fa.fa-sync.fa-spin
-            span.payload
-        // li
-        //  a(href='old', target='_blank') Old Version 
-        li.dropdown.language-picker.main-top-nav-bar-button-right
-          a.dropdown-toggle('data-toggle'='dropdown', href='#')
-            span.language-placeholder
-            b.caret
-          ul.dropdown-menu      
+          a(href='https://discord.gg/nvXS8YT', target="_blank") League Discord   
         li.main-top-nav-bar-button-right
           a#aboutTab('data-toggle'="tab", href='#aboutContent') About    
         li.main-top-nav-bar-button-right
-          a#browserTab('data-toggle'="tab", href='#browserContent') Card Browser                      
+          a#browserTab('data-toggle'="tab", href='#browserContent') Card Browser    
+        li.main-top-nav-bar-button-right
+          a#rulesTab('data-toggle'="tab", href='#aboutRules') Ban League Rules    
+        li.main-top-nav-bar-button-right
+          a#bannedTab('data-toggle'="tab", href='#aboutBanned') Banned Cards                   
 
       .tab-content
         .tab-pane#rebelContent
@@ -103,6 +88,8 @@ html
                     img(src="android-chrome-192x192.png", height="100", width="100")
                     h2 YASB for X-Wing 2.0
                 :markdown
+                    **This is a modified version of YASB 2.0 for use in the Liberty Squadron Ban League. More information about YASB 2.0 can be found below.**
+
                     YASB 2.0 is a simple, fast, no-frills squad builder for [X-Wing Miniatures](http://www.fantasyflightgames.com/edge_minisite.asp?eidm=174&enmi=X-Wing) by [Fantasy Flight Games](http://www.fantasyflightgames.com/index.asp).  
 
                     It is pure HTML, JavaScript, and CSS and requires no backend, and can be dropped into place on any website (with maybe a few CSS tweaks).
@@ -134,7 +121,69 @@ html
                     Do you want to donate? Many people have bothered me to add a donate button so here it is! Please don't feel obligated to donate for using this site just because this button is here. This site will always be free, and always 100% available for all people to use.
                 p
                     button(class='btn btn-primary paypal', onclick="window.open('https://paypal.me/raithos');") Donate?
+        .tab-pane#aboutRules
+          .container-fluid
+            .row-fluid
+              .span8
+                .image-block
+                    img(src="android-chrome-192x192.png", height="100", width="100")
+                    h2 Liberty Squadron Ban League Rules
+                :markdown
+                  ### About
+                    **Start Date:** May 31  
+                    **Format:** Extended  
+                    **Length:** 12 Weeks  
+                    **Pods:** Every 3 weeks, 8 players per pod, pods will repair after completion  
+                    **Bans:** Happen every week, last for 2 weeks  4
+                    **Eligible to ban:**  pilots, ships, and upgrades. Usage and performance will increase a cards chances to be banned but will ultimately be decided randomly. Ex. Fenn rau was used 20 times out of 100 pilots. His chances of being banned are approximately 20%. (Not the exact maths we are using just an example)  
+                    **Round Length:** 1 week to complete each round. 75 minute game on TTS  
+                    **Rounds End:** Sunday 8pm EST  
+                    **Pairings Up:** Mondays  
+                    **Ban List Up:** Mondays  
+  
+                  ### Sign Up  
+                    [Sign up using this google form.](https://docs.google.com/forms/d/e/1FAIpQLScgWz8ymW8yAaed6SQXp7V2-N95AmbXfCOlO-OTxsPrxLVhhg/viewform?fbzx=8693587550640418556)  
+        .tab-pane#aboutBanned
+          .container-fluid
+            .row-fluid
+              .span8
+                h2 Banned Cards
+                :markdown
+                  Banned cards will not be visible in the squad builder.
 
+                  ### Week 1
+                    - Boba Fett
+                    - Fenn Rau (scum)
+                    - Darth Vader (pilot)
+                    - Whisper
+                    - Poe Dameron
+                    - Zizi Tlo
+                    - Kylo Ren (Pilot)
+                    - Luke Skywalker (Pilot)
+                    - Braylen Stramm
+                    - Anakin Skywalker (Delta-7 Aethersprite)
+                    - Obi-Wan Kenobi
+                    - Captain Sear
+                    - Trade Federation Drone
+                    - Proton Torpedoes
+                    - R2 Astromech
+
+                  ### Week 2 
+                  **All Cards from Week 1 remain banned**  
+                    **Pilots**  
+                      - Wedge Antilles   
+                      - Ten Numb   
+                      - Non Lumb   
+                      - Finn    
+                      - Old Teroch   
+                    **Upgrades**   
+                      - Crack Shot   
+                      - Fire-Control System   
+                      - Proximity Mines   
+                    **Ships**  
+                      - Kihraxz Fighter   
+                      - TIE Interceptor     
+ 
     .footer
       .msie8-hax
 
