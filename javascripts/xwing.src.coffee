@@ -8433,21 +8433,21 @@ exportObj.basicCardData = ->
                 "Modification"
             ]
         }
-        {
-            name: "General Grievous"
-            id: 305
-            faction: "Separatist Alliance"
-            ship: "Belbullab-22 Starfighter"
-            unique: true
-            skill: 4
-            points: 44
-            slots: [
-                "Talent"
-                "Tactical Relay"
-                "Modification"
-                "Title"
-            ]
-        }
+#        {
+#            name: "General Grievous"
+#            id: 305
+#            faction: "Separatist Alliance"
+#            ship: "Belbullab-22 Starfighter"
+#            unique: true
+#            skill: 4
+#            points: 44
+#            slots: [
+#                "Talent"
+#                "Tactical Relay"
+#                "Modification"
+#                "Title"
+#            ]
+#        }
         {
             name: "Wat Tambor"
             id: 306
