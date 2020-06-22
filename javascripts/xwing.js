@@ -16726,7 +16726,7 @@ exportObj.cardLoaders.English = function() {
       text: "If you would drop a device using a [1&nbsp;%STRAIGHT%] template, you may drop it using any speed 1 template instead."
     },
     "Soontir Fel": {
-      display_name: "Soontir Fel (BANNED FOR POD 2)",
+      display_name: "Soontir Fel",
       text: "At the start of the Engagement Phase, if there is an enemy ship in your %BULLSEYEARC%, gain 1 focus token.%LINEBREAK%<strong>Autothrusters:</strong> After you perform an action, you may perform a red %BARRELROLL% or red %BOOST% action."
     },
     "Spice Runner": {
@@ -17378,7 +17378,7 @@ exportObj.cardLoaders.English = function() {
       text: "After you reveal your dial, you may perform 1 action.%LINEBREAK%If you do, you cannot perform another action during your activation."
     },
     "Afterburners": {
-      display_name: "Afterburners (BANNED FOR POD 2)",
+      display_name: "Afterburners",
       text: "<i>small ship only</i>%LINEBREAK%After you fully execute a speed 3-5 maneuver, you may spend 1&nbsp;%CHARGE% to perform a %BOOST% action, even while stressed."
     },
     "Agent Kallus": {
@@ -17525,7 +17525,7 @@ exportObj.cardLoaders.English = function() {
       text: "<i>Separatist Alliance only</i>%LINEBREAK%Before a ship at range&nbsp;0-2 rolls attack or defense dice, if all of your %FORCE% are active, you may spend 1 %FORCE% and name a result. If the roll does not contain the named result, the ship must change 1&nbsp;die to that result."
     },
     "Crack Shot": {
-      display_name: "Crack Shot (BANNED FOR POD 2)",
+      display_name: "Crack Shot",
       text: "While you perform a primary attack, if the defender is in your %BULLSEYEARC%, before the Neutralize Results step, you may spend 1&nbsp;%CHARGE% to cancel 1&nbsp;%EVADE% result."
     },
     "DRK-1 Probe Droids": {
@@ -17561,7 +17561,7 @@ exportObj.cardLoaders.English = function() {
       text: "After you drop, launch or place a bomb or mine, you may place 1 fuse marker on that device."
     },
     "Delta-7B": {
-      display_name: "Delta-7B (BANNED FOR POD 2)",
+      display_name: "Delta-7B",
       text: "<i class = flavor_text>The Delta-7B was designed as a heavier variant of the Delta-7 Aethersprite-class Interceptor, identifiable by the repositioned astromech slot. Many Jedi Generals favor this craft’s greater firepower and durability.</i>"
     },
     "Dengar": {
@@ -17866,7 +17866,7 @@ exportObj.cardLoaders.English = function() {
       text: "While you perform an attack, if the defender is in your %BULLSEYEARC%, you may change 1&nbsp;%HIT% result to a %CRIT% result."
     },
     "Maul": {
-      display_name: "Maul (BANNED FOR POD 2)",
+      display_name: "Maul",
       text: "<i>Scum or Squad including Ezra Bridger or Squad including Ezra Bridger (Sheathipede) or Squad including Ezra Bridger (TIE Fighter) only</i>%LINEBREAK%After you suffer damage, you may gain 1 stress token to recover 1&nbsp;%FORCE%.%LINEBREAK%You can equip “Dark Side” upgrades."
     },
     "Minister Tua": {
@@ -17993,23 +17993,23 @@ exportObj.cardLoaders.English = function() {
       text: "<i>Galactic Republic only</i>%LINEBREAK%After you fully execute a red maneuver, if there is an enemy ship in your %BULLSEYEARC%, gain 1&nbsp;calculate token."
     },
     "R5 Astromech": {
-      display_name: "R5 Astromech (BANNED FOR POD 2)",
+      display_name: "R5 Astromech",
       text: "<strong>Action:</strong> Spend 1&nbsp;%CHARGE% to repair 1 facedown damage card.%LINEBREAK%<strong>Action:</strong> Repair 1 faceup <strong>Ship</strong> damage card."
     },
     "R5-D8": {
-      display_name: "R5-D8 (BANNED FOR POD 2)",
+      display_name: "R5-D8",
       text: "<i>Rebel only</i>%LINEBREAK%<strong>Action:</strong> Spend 1&nbsp;%CHARGE% to repair 1 facedown damage card.%LINEBREAK%<strong>Action:</strong> Repair 1 faceup <strong>Ship</strong> damage card."
     },
     "R5-P8": {
-      display_name: "R5-P8 (BANNED FOR POD 2)",
+      display_name: "R5-P8",
       text: "<i>Scum only</i>%LINEBREAK%While you perform an attack against a defender in your %FRONTARC%, you may spend 1&nbsp;%CHARGE% to reroll 1 attack die. If the rerolled result is a %CRIT% result, suffer 1&nbsp;%CRIT% damage."
     },
     "R5-TK": {
-      display_name: "R5-TK (BANNED FOR POD 2)",
+      display_name: "R5-TK",
       text: "<i>Scum only</i>%LINEBREAK%You can perform attacks against friendly ships."
     },
     "R5-X3": {
-      display_name: "R5-X3 (BANNED FOR POD 2)",
+      display_name: "R5-X3",
       text: "<i>Resistance only</i>%LINEBREAK%Before you activate or engage, you may spend 1&nbsp;%CHARGE% to ignore obstacles until the end of this phase."
     },
     "Rey": {
@@ -18212,7 +18212,7 @@ exportObj.cardLoaders.English = function() {
       text: "<strong>Bomb</strong>%LINEBREAK%During the System Phase, you may spend 1 %CHARGE% to drop an Electro-Proton Bomb with the [1 %STRAIGHT%] template. Then place 1 fuse marker on that device. %LINEBREAK%This card’s %CHARGE% cannot be recovered."
     },
     "Passive Sensors": {
-      display_name: "Passive Sensors (BANNED FOR POD 2)",
+      display_name: "Passive Sensors",
       text: "<strong>Action:</strong> Spend 1 %CHARGE%. You can only perform this action in your Perform Action step. %LINEBREAK% While your %CHARGE% is inactive, you cannot be coordinated. Before you engage, if your %CHARGE% is inactive, you may perform a %CALCULATE% or %LOCK% action."
     },
     "R2-A6": {
