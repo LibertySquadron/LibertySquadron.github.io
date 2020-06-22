@@ -6474,20 +6474,20 @@ exportObj.basicCardData = ->
                 "Modification"
               ]
         }
-        {
-            name: "Soontir Fel"
-            id: 179
-            unique: true
-            faction: "Galactic Empire"
-            ship: "TIE Interceptor"
-            skill: 6
-            points: 53
-            slots: [       
-                "Talent"
-                "Modification"
-                "Modification"
-              ]
-        }
+#        {
+#            name: "Soontir Fel"
+#            id: 179
+#            unique: true
+#            faction: "Galactic Empire"
+#            ship: "TIE Interceptor"
+#            skill: 6
+#            points: 53
+#            slots: [       
+#                "Talent"
+#                "Modification"
+#                "Modification"
+#              ]
+#        }
         {
             name: "Turr Phennir"
             id: 180
@@ -10116,39 +10116,39 @@ exportObj.basicCardData = ->
                         else 
                             stats.maneuvers[2][turn] = 2
        }
-       {
-           name: "R5 Astromech"
-           id: 6
-           slot: "Astromech"
-           points: 4
-           charge: 2
-       }
-       {
-           name: "R5-D8"
-           id: 7
-           unique: true
-           slot: "Astromech"
-           points: 6
-           charge: 3
-           faction: "Rebel Alliance"
-       }
-       {
-           name: "R5-P8"
-           id: 8
-           slot: "Astromech"
-           points: 4
-           unique: true
-           faction: "Scum and Villainy"
-           charge: 3
-       }
-       {
-           name: "R5-TK"
-           id: 9
-           slot: "Astromech"
-           points: 0
-           unique: true
-           faction: "Scum and Villainy"
-       }
+#       {
+#           name: "R5 Astromech"
+#           id: 6
+#           slot: "Astromech"
+#           points: 4
+#           charge: 2
+#       }
+#       {
+#           name: "R5-D8"
+#           id: 7
+#           unique: true
+#           slot: "Astromech"
+#           points: 6
+#           charge: 3
+#           faction: "Rebel Alliance"
+#       }
+#       {
+#           name: "R5-P8"
+#           id: 8
+#           slot: "Astromech"
+#           points: 4
+#           unique: true
+#           faction: "Scum and Villainy"
+#           charge: 3
+#       }
+#       {
+#           name: "R5-TK"
+#           id: 9
+#           slot: "Astromech"
+#           points: 0
+#           unique: true
+#           faction: "Scum and Villainy"
+#       }
        {
            name: "Heavy Laser Cannon"
            id: 10
@@ -10502,25 +10502,25 @@ exportObj.basicCardData = ->
            unique: true
            faction: "Scum and Villainy"
        }
-       {
-           name: "Maul"
-           id: 48
-           slot: "Crew"
-           points: 12
-           unique: true
-           faction: ["Scum and Villainy", "Rebel Alliance"]
-           force: 1
-           modifier_func: (stats) ->
-                stats.force += 1
-                stats.darkside = true
-           restriction_func: (ship) ->
-                builder = ship.builder
-                return true if builder.faction == "Scum and Villainy"
-                for t, things of builder.uniques_in_use
-                    if t != 'Slot'
-                        return true if 'ezrabridger' in (thing.canonical_name.getXWSBaseName() for thing in things)
-                false
-       }
+#       {
+#           name: "Maul"
+#           id: 48
+#           slot: "Crew"
+#           points: 12
+#           unique: true
+#           faction: ["Scum and Villainy", "Rebel Alliance"]
+#           force: 1
+#           modifier_func: (stats) ->
+#                stats.force += 1
+#                stats.darkside = true
+#           restriction_func: (ship) ->
+#                builder = ship.builder
+#                return true if builder.faction == "Scum and Villainy"
+#                for t, things of builder.uniques_in_use
+#                    if t != 'Slot'
+#                        return true if 'ezrabridger' in (thing.canonical_name.getXWSBaseName() for thing in things)
+#                false
+#       }
        {
            name: "Minister Tua"
            id: 49
@@ -11026,15 +11026,15 @@ exportObj.basicCardData = ->
            restriction_func: (ship) -> 
                 "Slam" in ship.effectiveStats().actions or "Slam" in ship.effectiveStats().actionsred
        }
-       {
-           name: "Afterburners"
-           id: 105
-           slot: "Modification"
-           points: 6
-           charge: 2
-           restriction_func: (ship) ->
-                not (ship.data.large? or ship.data.medium? or ship.data.huge?)
-       }
+#       {
+#           name: "Afterburners"
+#           id: 105
+#           slot: "Modification"
+#           points: 6
+#           charge: 2
+#           restriction_func: (ship) ->
+#                not (ship.data.large? or ship.data.medium? or ship.data.huge?)
+#       }
        {
            name: "Electronic Baffle"
            id: 106
@@ -11908,18 +11908,18 @@ exportObj.basicCardData = ->
                 upgrade_obj.occupiesAnUpgradeSlot "Modification"
             also_occupies_upgrades: [ "Modification" ]
        }
-       {
-            name: "Delta-7B"
-            id: 201
-            slot: "Configuration"
-            ship: "Delta-7 Aethersprite"
-            pointsarray: [14,15,16,17,18,19,20]
-            variableinit: true
-            modifier_func: (stats) ->
-                stats.attack += 1
-                stats.agility += -1
-                stats.shields += 2
-       }
+#       {
+#            name: "Delta-7B"
+#            id: 201
+#            slot: "Configuration"
+#            ship: "Delta-7 Aethersprite"
+#            pointsarray: [14,15,16,17,18,19,20]
+#            variableinit: true
+#            modifier_func: (stats) ->
+#                stats.attack += 1
+#                stats.agility += -1
+#                stats.shields += 2
+#       }
        {
             name: "Biohexacrypt Codes"
             id: 202
@@ -11944,15 +11944,15 @@ exportObj.basicCardData = ->
             restriction_func: (ship) ->
                 ship.effectiveStats().darkside == true
        }
-       {
-            name: "R5-X3"
-            id: 205
-            unique: true
-            slot: "Astromech"
-            faction: "Resistance"
-            charge: 2
-            points: 5
-       }
+#       {
+#            name: "R5-X3"
+#            id: 205
+#            unique: true
+#            slot: "Astromech"
+#            faction: "Resistance"
+#            charge: 2
+#            points: 5
+#       }
        {
             name: "Pattern Analyzer"
             id: 206
@@ -12282,14 +12282,14 @@ exportObj.basicCardData = ->
             faction: "Separatist Alliance"
             points: 9
        }
-       {
-            name: "Passive Sensors"
-            id: 240
-            slot: "Sensor"
-            charge: 1
-            recurring: true
-            points: 3
-       }
+#       {
+#            name: "Passive Sensors"
+#            id: 240
+#            slot: "Sensor"
+#            charge: 1
+#            recurring: true
+#            points: 3
+#       }
        {
             name: "R2-A6"
             id: 241

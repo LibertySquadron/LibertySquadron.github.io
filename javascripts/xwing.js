@@ -4455,15 +4455,6 @@ exportObj.basicCardData = function() {
         points: 36,
         slots: ["Sensor", "Missile", "Modification"]
       }, {
-        name: "Soontir Fel",
-        id: 179,
-        unique: true,
-        faction: "Galactic Empire",
-        ship: "TIE Interceptor",
-        skill: 6,
-        points: 53,
-        slots: ["Talent", "Modification", "Modification"]
-      }, {
         name: "Turr Phennir",
         id: 180,
         unique: true,
@@ -6258,35 +6249,6 @@ exportObj.basicCardData = function() {
           return _results;
         }
       }, {
-        name: "R5 Astromech",
-        id: 6,
-        slot: "Astromech",
-        points: 4,
-        charge: 2
-      }, {
-        name: "R5-D8",
-        id: 7,
-        unique: true,
-        slot: "Astromech",
-        points: 6,
-        charge: 3,
-        faction: "Rebel Alliance"
-      }, {
-        name: "R5-P8",
-        id: 8,
-        slot: "Astromech",
-        points: 4,
-        unique: true,
-        faction: "Scum and Villainy",
-        charge: 3
-      }, {
-        name: "R5-TK",
-        id: 9,
-        slot: "Astromech",
-        points: 0,
-        unique: true,
-        faction: "Scum and Villainy"
-      }, {
         name: "Heavy Laser Cannon",
         id: 10,
         slot: "Cannon",
@@ -6621,43 +6583,6 @@ exportObj.basicCardData = function() {
         points: 7,
         unique: true,
         faction: "Scum and Villainy"
-      }, {
-        name: "Maul",
-        id: 48,
-        slot: "Crew",
-        points: 12,
-        unique: true,
-        faction: ["Scum and Villainy", "Rebel Alliance"],
-        force: 1,
-        modifier_func: function(stats) {
-          stats.force += 1;
-          return stats.darkside = true;
-        },
-        restriction_func: function(ship) {
-          var builder, t, thing, things, _ref;
-          builder = ship.builder;
-          if (builder.faction === "Scum and Villainy") {
-            return true;
-          }
-          _ref = builder.uniques_in_use;
-          for (t in _ref) {
-            things = _ref[t];
-            if (t !== 'Slot') {
-              if (__indexOf.call((function() {
-                var _i, _len, _results;
-                _results = [];
-                for (_i = 0, _len = things.length; _i < _len; _i++) {
-                  thing = things[_i];
-                  _results.push(thing.canonical_name.getXWSBaseName());
-                }
-                return _results;
-              })(), 'ezrabridger') >= 0) {
-                return true;
-              }
-            }
-          }
-          return false;
-        }
       }, {
         name: "Minister Tua",
         id: 49,
@@ -7170,15 +7095,6 @@ exportObj.basicCardData = function() {
         points: 3,
         restriction_func: function(ship) {
           return __indexOf.call(ship.effectiveStats().actions, "Slam") >= 0 || __indexOf.call(ship.effectiveStats().actionsred, "Slam") >= 0;
-        }
-      }, {
-        name: "Afterburners",
-        id: 105,
-        slot: "Modification",
-        points: 6,
-        charge: 2,
-        restriction_func: function(ship) {
-          return !((ship.data.large != null) || (ship.data.medium != null) || (ship.data.huge != null));
         }
       }, {
         name: "Electronic Baffle",
@@ -7961,18 +7877,6 @@ exportObj.basicCardData = function() {
         },
         also_occupies_upgrades: ["Modification"]
       }, {
-        name: "Delta-7B",
-        id: 201,
-        slot: "Configuration",
-        ship: "Delta-7 Aethersprite",
-        pointsarray: [14, 15, 16, 17, 18, 19, 20],
-        variableinit: true,
-        modifier_func: function(stats) {
-          stats.attack += 1;
-          stats.agility += -1;
-          return stats.shields += 2;
-        }
-      }, {
         name: "Biohexacrypt Codes",
         id: 202,
         slot: "Tech",
@@ -7995,14 +7899,6 @@ exportObj.basicCardData = function() {
         restriction_func: function(ship) {
           return ship.effectiveStats().darkside === true;
         }
-      }, {
-        name: "R5-X3",
-        id: 205,
-        unique: true,
-        slot: "Astromech",
-        faction: "Resistance",
-        charge: 2,
-        points: 5
       }, {
         name: "Pattern Analyzer",
         id: 206,
@@ -8321,13 +8217,6 @@ exportObj.basicCardData = function() {
         solitary: true,
         faction: "Separatist Alliance",
         points: 9
-      }, {
-        name: "Passive Sensors",
-        id: 240,
-        slot: "Sensor",
-        charge: 1,
-        recurring: true,
-        points: 3
       }, {
         name: "R2-A6",
         id: 241,
