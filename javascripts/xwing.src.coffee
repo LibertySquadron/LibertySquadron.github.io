@@ -10123,32 +10123,32 @@ exportObj.basicCardData = ->
 #           points: 4
 #           charge: 2
 #       }
-#       {
-#           name: "R5-D8"
-#           id: 7
-#           unique: true
-#           slot: "Astromech"
-#           points: 6
-#           charge: 3
-#           faction: "Rebel Alliance"
-#       }
-#       {
-#           name: "R5-P8"
-#           id: 8
-#           slot: "Astromech"
-#           points: 4
-#           unique: true
-#           faction: "Scum and Villainy"
-#           charge: 3
-#       }
-#       {
-#           name: "R5-TK"
-#           id: 9
-#           slot: "Astromech"
-#           points: 0
-#           unique: true
-#           faction: "Scum and Villainy"
-#       }
+       {
+           name: "R5-D8"
+           id: 7
+           unique: true
+           slot: "Astromech"
+           points: 6
+           charge: 3
+           faction: "Rebel Alliance"
+       }
+       {
+           name: "R5-P8"
+           id: 8
+           slot: "Astromech"
+           points: 4
+           unique: true
+           faction: "Scum and Villainy"
+           charge: 3
+       }
+       {
+           name: "R5-TK"
+           id: 9
+           slot: "Astromech"
+           points: 0
+           unique: true
+           faction: "Scum and Villainy"
+       }
        {
            name: "Heavy Laser Cannon"
            id: 10
@@ -11944,15 +11944,15 @@ exportObj.basicCardData = ->
             restriction_func: (ship) ->
                 ship.effectiveStats().darkside == true
        }
-#       {
-#            name: "R5-X3"
-#            id: 205
-#            unique: true
-#            slot: "Astromech"
-#            faction: "Resistance"
-#            charge: 2
-#            points: 5
-#       }
+       {
+            name: "R5-X3"
+            id: 205
+            unique: true
+            slot: "Astromech"
+            faction: "Resistance"
+            charge: 2
+            points: 5
+       }
        {
             name: "Pattern Analyzer"
             id: 206
