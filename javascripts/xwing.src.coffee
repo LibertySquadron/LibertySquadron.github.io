@@ -2862,30 +2862,30 @@ exportObj.basicCardData = ->
               [ 0, 0, 2, 0, 0, 0, 0, 0]
               [ 0, 0, 2, 0, 0, 3, 0, 0]
             ]
-        "TIE/FO Fighter":
-            name: "TIE/FO Fighter"
-            xws: "TIE/fo Fighter".canonicalize()
-            factions: ["First Order"]
-            attack: 2
-            agility: 3
-            hull: 3
-            shields: 1
-            actions: [
-                "Focus"
-                "Evade"
-                "Lock"
-                "Barrel Roll"
-            ]
-            actionsred: [
-            ]
-            maneuvers: [
-              [ 0, 0, 0, 0, 0, 0, 0, 0]
-              [ 1, 0, 0, 0, 1, 0, 0, 0]
-              [ 2, 2, 2, 2, 2, 0, 3, 3]
-              [ 1, 1, 2, 1, 1, 0, 0, 0]
-              [ 0, 0, 1, 0, 0, 3, 0, 0]
-              [ 0, 0, 1, 0, 0, 0, 0, 0]
-            ]
+        #"TIE/FO Fighter":
+            #name: "TIE/FO Fighter"
+            #xws: "TIE/fo Fighter".canonicalize()
+            #factions: ["First Order"]
+            #attack: 2
+            #agility: 3
+            #hull: 3
+            #shields: 1
+            #actions: [
+                #"Focus"
+                #"Evade"
+                #"Lock"
+                #"Barrel Roll"
+            #]
+            #actionsred: [
+            #]
+            #maneuvers: [
+              #[ 0, 0, 0, 0, 0, 0, 0, 0]
+              #[ 1, 0, 0, 0, 1, 0, 0, 0]
+              #[ 2, 2, 2, 2, 2, 0, 3, 3]
+              #[ 1, 1, 2, 1, 1, 0, 0, 0]
+              #[ 0, 0, 1, 0, 0, 3, 0, 0]
+              #[ 0, 0, 1, 0, 0, 0, 0, 0]
+            #]
         "TIE/VN Silencer":
             name: "TIE/VN Silencer"
             xws: "TIE/vn Silencer".canonicalize()
@@ -7847,18 +7847,18 @@ exportObj.basicCardData = ->
 #                "Modification"
 #            ]
 #        }
-        {
-            name: "Epsilon Squadron Cadet"
-            id: 269
-            faction: "First Order"
-            ship: "TIE/FO Fighter"
-            skill: 1
-            points: 25
-            slots: [
-                "Tech"
-                "Modification"
-            ]
-        }
+#        {
+#            name: "Epsilon Squadron Cadet"
+#            id: 269
+#            faction: "First Order"
+#            ship: "TIE/FO Fighter"
+#            skill: 1
+#            points: 25
+#            slots: [
+#                "Tech"
+#                "Modification"
+#            ]
+#        }
         {
             name: "Greer Sonnel"
             id: 270
@@ -19135,7 +19135,7 @@ exportObj.cardLoaders.Deutsch = () ->
     exportObj.renameShip """JumpMaster 5000""", """JumpMaster 5000"""
     exportObj.renameShip """Customized YT-1300""", """Modifizierter YT-1300-Frachter"""
     exportObj.renameShip """Escape Craft""", """Fluchtschiff"""
-    exportObj.renameShip """TIE/FO Fighter""", """TIE/eo-Jäger"""
+    #exportObj.renameShip """TIE/FO Fighter""", """TIE/eo-Jäger"""
     exportObj.renameShip """TIE/SF Fighter""", """TIE/sf Jäger"""
     exportObj.renameShip """Upsilon-Class Command Shuttle""", """Kommandoshuttle der Ypsilon-Klasse"""
     exportObj.renameShip """TIE/VN Silencer""", """TIE/vn-Dämpfer"""
@@ -21238,7 +21238,7 @@ exportObj.cardLoaders.English = () ->
     exportObj.renameShip """JumpMaster 5000""", """JumpMaster 5000"""
     exportObj.renameShip """Customized YT-1300""", """Customized YT-1300 Light Freighter"""
     exportObj.renameShip """Escape Craft""", """Escape Craft"""
-    exportObj.renameShip """TIE/FO Fighter""", """TIE/FO Fighter"""
+    #exportObj.renameShip """TIE/FO Fighter""", """TIE/FO Fighter"""
     exportObj.renameShip """TIE/SF Fighter""", """TIE/SF Fighter"""
     exportObj.renameShip """Upsilon-Class Command Shuttle""", """Upsilon-Class Command Shuttle"""
     exportObj.renameShip """TIE/VN Silencer""", """TIE/vn Silencer"""
