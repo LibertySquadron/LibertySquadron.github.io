@@ -2939,15 +2939,6 @@ exportObj.basicCardData = function() {
         points: 62,
         slots: ["Force", "Torpedo", "Astromech", "Modification", "Configuration"]
       }, {
-        name: "Wedge Antilles",
-        id: 5,
-        unique: true,
-        faction: "Rebel Alliance",
-        ship: "X-Wing",
-        skill: 6,
-        points: 55,
-        slots: ["Talent", "Torpedo", "Astromech", "Modification", "Configuration"]
-      }, {
         name: "Garven Dreis (X-Wing)",
         canonical_name: 'Garven Dreis'.canonicalize(),
         id: 6,
