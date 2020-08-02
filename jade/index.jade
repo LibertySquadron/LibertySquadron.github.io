@@ -38,31 +38,31 @@ html
 
     .tabbable.d-print-none
       ul.nav.nav-pills.main-top-nav-bar
-        li
-          a#rebelTab('data-toggle'="tab", href='#rebelContent') <i class="xwing-miniatures-font xwing-miniatures-font-rebel"></i>
-        li
-          a#empireTab('data-toggle'="tab", href='#empireContent') <i class="xwing-miniatures-font xwing-miniatures-font-empire"></i>
-        li
-          a#scumTab('data-toggle'="tab", href='#scumContent') <i class="xwing-miniatures-font xwing-miniatures-font-scum"></i>
-        li
-          a#resistanceTab('data-toggle'="tab", href='#resistanceContent') <i class="xwing-miniatures-font xwing-miniatures-font-rebel-outline"></i>
-        li
-          a#firstorderTab('data-toggle'="tab", href='#firstorderContent') <i class="xwing-miniatures-font xwing-miniatures-font-firstorder"></i>
-        li
-          a#republicTab('data-toggle'="tab", href='#republicContent') <i class="xwing-miniatures-font xwing-miniatures-font-republic"></i>
-        li
-          a#separatistTab('data-toggle'="tab", href='#separatistContent') <i class="xwing-miniatures-font xwing-miniatures-font-separatists"></i>
+        li.nav-item
+          a#rebelTab.nav-link('data-toggle'="tab", href='#rebelContent') <i class="xwing-miniatures-font xwing-miniatures-font-rebel"></i>
+        li.nav-item
+          a#empireTab.nav-link('data-toggle'="tab", href='#empireContent') <i class="xwing-miniatures-font xwing-miniatures-font-empire"></i>
+        li.nav-item
+          a#scumTab.nav-link('data-toggle'="tab", href='#scumContent') <i class="xwing-miniatures-font xwing-miniatures-font-scum"></i>
+        li.nav-item
+          a#resistanceTab.nav-link('data-toggle'="tab", href='#resistanceContent') <i class="xwing-miniatures-font xwing-miniatures-font-rebel-outline"></i>
+        li.nav-item
+          a#firstorderTab.nav-link('data-toggle'="tab", href='#firstorderContent') <i class="xwing-miniatures-font xwing-miniatures-font-firstorder"></i>
+        li.nav-item
+          a#republicTab.nav-link('data-toggle'="tab", href='#republicContent') <i class="xwing-miniatures-font xwing-miniatures-font-republic"></i>
+        li.nav-item
+          a#separatistTab.nav-link('data-toggle'="tab", href='#separatistContent') <i class="xwing-miniatures-font xwing-miniatures-font-separatists"></i>
        
-        li.main-top-nav-bar-button-right
-          a(href='https://discord.gg/nvXS8YT', target="_blank") League Discord   
-        li.main-top-nav-bar-button-right
-          a#aboutTab('data-toggle'="tab", href='#aboutContent') About    
-        li.main-top-nav-bar-button-right
-          a#browserTab('data-toggle'="tab", href='#browserContent') Card Browser    
-        li.main-top-nav-bar-button-right
-          a#rulesTab('data-toggle'="tab", href='#aboutRules') Ban League Rules    
-        li.main-top-nav-bar-button-right
-          a#bannedTab('data-toggle'="tab", href='#aboutBanned') Banned Cards                   
+        li.nav-item.float-right
+          a.nav-link(href='https://discord.gg/nvXS8YT', target="_blank") League Discord   
+        li.nav-item.float-right
+          a#aboutTab.nav-link('data-toggle'="tab", href='#aboutContent') About    
+        li.nav-item.float-right
+          a#browserTab.nav-link('data-toggle'="tab", href='#browserContent') Card Browser    
+        li.nav-item.float-right
+          a#rulesTab.nav-link('data-toggle'="tab", href='#aboutRules') Ban League Rules    
+        li.nav-item.float-right
+          a#bannedTab.nav-link('data-toggle'="tab", href='#aboutBanned') Banned Cards                   
 
       .tab-content
         .tab-pane.fade#rebelContent
