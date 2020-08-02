@@ -8035,11 +8035,11 @@ exportObj.manifestByExpansion =
             type: 'ship'
             count: 3
         }
-        {
-            name: 'Scavenged YT-1300'
-            type: 'ship'
-            count: 3
-        }
+#        {
+#            name: 'Scavenged YT-1300'
+#            type: 'ship'
+#            count: 3
+#        }
         {
             name: 'Raider-class Corvette'
             type: 'ship'
