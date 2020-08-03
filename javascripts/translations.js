@@ -176,7 +176,6 @@ exportObj.cardLoaders.Deutsch = function() {
   exportObj.renameShip("YT-2400", "Leichter YT-2400-Frachter");
   exportObj.renameShip("Auzituck Gunship", "Auzituck-Kanonenboot");
   exportObj.renameShip("Kihraxz Fighter", "Kihraxz-Jäger");
-  exportObj.renameShip("Sheathipede-Class Shuttle", "Raumfähre der Sheathipede-Klasse");
   exportObj.renameShip("Quadjumper", "Quadrijet-Transferschlepper");
   exportObj.renameShip("Firespray-31", "Patrouillenboot der Firespray-Klasse");
   exportObj.renameShip("TIE Fighter", "TIE/ln-Jäger");
@@ -186,7 +185,6 @@ exportObj.cardLoaders.Deutsch = function() {
   exportObj.renameShip("U-Wing", "UT-60D-U-Flügler");
   exportObj.renameShip("TIE Striker", "TIE/sk-Stürmer");
   exportObj.renameShip("B-Wing", "A/SF-01-B-Flügler");
-  exportObj.renameShip("TIE Defender", "TIE/D-Abwehrjäger");
   exportObj.renameShip("TIE Bomber", "TIE/sa-Bomber");
   exportObj.renameShip("TIE Punisher", "TIE/ca-Vergelter");
   exportObj.renameShip("Aggressor", "Aggressor-Angriffsjäger");
@@ -203,6 +201,7 @@ exportObj.cardLoaders.Deutsch = function() {
   exportObj.renameShip("Attack Shuttle", "Jagdshuttle");
   exportObj.renameShip("HWK-290", "Leichter HWK-290-Frachter");
   exportObj.renameShip("A-Wing", "RZ-1-A-Flügler");
+  exportObj.renameShip("Fang Fighter", "Fangjäger");
   exportObj.renameShip("Z-95 Headhunter", "Z-95-AF4-Kopfjäger");
   exportObj.renameShip("M12-L Kimogila Fighter", "M12-L-Kimogila-Jäger");
   exportObj.renameShip("E-Wing", "E-Flügler");
@@ -223,6 +222,7 @@ exportObj.cardLoaders.Deutsch = function() {
   exportObj.renameShip("Scavenged YT-1300", "YT-1300 vom Schrottplatz");
   exportObj.renameShip("V-19 Torrent", "V-19-Torrent-Sternenjäger");
   exportObj.renameShip("Belbullab-22 Starfighter", "Bellbullab-22 Sternenjäger");
+  exportObj.renameShip("Vulture-class Droid Fighter", "Droidenjäger der Vulture-Klasse");
   exportObj.renameShip("Sith Infiltrator", "Sith-Infiltrator");
   pilot_translations = {
     "0-66": {
@@ -2897,7 +2897,6 @@ exportObj.cardLoaders['Español'] = function() {
   exportObj.renameShip("YT-2400", "Carguero ligero YT-2400");
   exportObj.renameShip("Auzituck Gunship", "Cañonera Auzituck");
   exportObj.renameShip("Kihraxz Fighter", "Caza Kihraxz");
-  exportObj.renameShip("Sheathipede-Class Shuttle", "Lanzadera clase Sheathipede");
   exportObj.renameShip("Quadjumper", "Remolcador espacial cuatrimotor");
   exportObj.renameShip("Firespray-31", "Patrullera clase Firespray");
   exportObj.renameShip("TIE Fighter", "Caza TIE/ln");
@@ -2907,7 +2906,6 @@ exportObj.cardLoaders['Español'] = function() {
   exportObj.renameShip("U-Wing", "UT-60D Ala-U");
   exportObj.renameShip("TIE Striker", "Fustigador TIE/sk");
   exportObj.renameShip("B-Wing", "A/SF-01 Ala-B");
-  exportObj.renameShip("TIE Defender", "Defensor TIE/D");
   exportObj.renameShip("TIE Bomber", "Bombardero TIE/sa");
   exportObj.renameShip("TIE Punisher", "Castigador TIE/ca");
   exportObj.renameShip("Aggressor", "Caza de asalto Agresor");
@@ -2924,6 +2922,7 @@ exportObj.cardLoaders['Español'] = function() {
   exportObj.renameShip("Attack Shuttle", "Lanzadera de ataque");
   exportObj.renameShip("HWK-290", "Carguero ligero HWK-290");
   exportObj.renameShip("A-Wing", "RZ-1 Ala-A");
+  exportObj.renameShip("Fang Fighter", "Caza Colmillo");
   exportObj.renameShip("Z-95 Headhunter", "Z-95-AF4 Cazacabezas");
   exportObj.renameShip("M12-L Kimogila Fighter", "Caza M12-L Kimogila");
   exportObj.renameShip("E-Wing", "Ala-E");
@@ -4715,7 +4714,6 @@ exportObj.cardLoaders['Français'] = function() {
   exportObj.renameShip("YT-2400", "Cargo YT-2400");
   exportObj.renameShip("Auzituck Gunship", "Canonnière Auzituck");
   exportObj.renameShip("Kihraxz Fighter", "Chasseur Kihraxz");
-  exportObj.renameShip("Sheathipede-Class Shuttle", "Navette de classe Sheathipede");
   exportObj.renameShip("Quadjumper", "Quad jumper");
   exportObj.renameShip("Firespray-31", "Vaisseau de Patrouille de classe Firespray");
   exportObj.renameShip("TIE Fighter", "Chasseur TIE/ln");
@@ -4725,7 +4723,6 @@ exportObj.cardLoaders['Français'] = function() {
   exportObj.renameShip("U-Wing", "U-wing");
   exportObj.renameShip("TIE Striker", "TIE Striker");
   exportObj.renameShip("B-Wing", "B-wing");
-  exportObj.renameShip("TIE Defender", "Défenseur TIE");
   exportObj.renameShip("TIE Bomber", "Bombardier TIE");
   exportObj.renameShip("TIE Punisher", "TIE Punisher");
   exportObj.renameShip("Aggressor", "TIE Aggressor");
@@ -4742,6 +4739,7 @@ exportObj.cardLoaders['Français'] = function() {
   exportObj.renameShip("Attack Shuttle", "Navette d’Attaque");
   exportObj.renameShip("HWK-290", "HWK-290");
   exportObj.renameShip("A-Wing", "A-wing");
+  exportObj.renameShip("Fang Fighter", "Chasseur Fang");
   exportObj.renameShip("Z-95 Headhunter", "Chasseur de Têtes Z-95");
   exportObj.renameShip("M12-L Kimogila Fighter", "Chasseur M12-L Kimogila");
   exportObj.renameShip("E-Wing", "E-wing");
@@ -7527,7 +7525,6 @@ exportObj.cardLoaders.Magyar = function() {
   exportObj.renameShip("YT-2400", "YT-2400 Light Freighter");
   exportObj.renameShip("Auzituck Gunship", "Auzituck Gunship");
   exportObj.renameShip("Kihraxz Fighter", "Kihraxz Fighter");
-  exportObj.renameShip("Sheathipede-Class Shuttle", "Sheathipede-class Shuttle");
   exportObj.renameShip("Quadjumper", "Quadrijet Transfer Spacetug");
   exportObj.renameShip("Firespray-31", "Firespray-class Patrol Craft");
   exportObj.renameShip("TIE Fighter", "TIE/ln Fighter");
@@ -7537,7 +7534,6 @@ exportObj.cardLoaders.Magyar = function() {
   exportObj.renameShip("U-Wing", "UT-60D U-Wing");
   exportObj.renameShip("TIE Striker", "TIE/sk Striker");
   exportObj.renameShip("B-Wing", "A/SF-01 B-Wing");
-  exportObj.renameShip("TIE Defender", "TIE/D Defender");
   exportObj.renameShip("TIE Bomber", "TIE/sa Bomber");
   exportObj.renameShip("TIE Punisher", "TIE/ca Punisher");
   exportObj.renameShip("Aggressor", "Aggressor Assault Fighter");
@@ -7554,6 +7550,7 @@ exportObj.cardLoaders.Magyar = function() {
   exportObj.renameShip("Attack Shuttle", "Attack Shuttle");
   exportObj.renameShip("HWK-290", "HWK-290 Light Freighter");
   exportObj.renameShip("A-Wing", "RZ-1 A-Wing");
+  exportObj.renameShip("Fang Fighter", "Fang Fighter");
   exportObj.renameShip("Z-95 Headhunter", "Z-95-AF4 Headhunter");
   exportObj.renameShip("M12-L Kimogila Fighter", "M12-L Kimogila Fighter");
   exportObj.renameShip("E-Wing", "E-Wing");
