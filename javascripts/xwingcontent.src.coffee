@@ -3681,32 +3681,32 @@ exportObj.basicCardData = ->
                     "Barrel Roll"
                 ]
         }
-        {
-            name: "Fenn Rau"
-            id: 97
-            unique: true
-            faction: "Scum and Villainy"
-            ship: "Fang Fighter"
-            skill: 6
-            points: 68
-            slots: [
-                "Talent"
-                "Torpedo"
-              ]
-        }
-        {
-            name: "Old Teroch"
-            id: 98
-            unique: true
-            faction: "Scum and Villainy"
-            ship: "Fang Fighter"
-            skill: 5
-            points: 56
-            slots: [
-                "Talent"
-                "Torpedo"
-              ]
-        }
+#        {
+#            name: "Fenn Rau"
+#            id: 97
+#            unique: true
+#            faction: "Scum and Villainy"
+#            ship: "Fang Fighter"
+#            skill: 6
+#            points: 68
+#            slots: [
+#                "Talent"
+#                "Torpedo"
+#              ]
+#        }
+#        {
+#            name: "Old Teroch"
+#            id: 98
+#            unique: true
+#            faction: "Scum and Villainy"
+#            ship: "Fang Fighter"
+#            skill: 5
+#            points: 56
+#            slots: [
+#                "Talent"
+#                "Torpedo"
+#              ]
+#        }
         {
             name: "Kad Solus"
             id: 99
@@ -6559,19 +6559,19 @@ exportObj.basicCardData = ->
                 "Modification"
             ]
         }
-        {
-            name: "Trade Federation Drone"
-            id: 279
-            faction: "Separatist Alliance"
-            ship: "Vulture-class Droid Fighter"
-            skill: 1
-            points: 20
-            slots: [
-                "Missile"
-                "Configuration"
-                "Modification"
-            ]
-        }
+#        {
+#            name: "Trade Federation Drone"
+#            id: 279
+#            faction: "Separatist Alliance"
+#            ship: "Vulture-class Droid Fighter"
+#            skill: 1
+#            points: 20
+#            slots: [
+#                "Missile"
+#                "Configuration"
+#                "Modification"
+#            ]
+#        }
         {
             name: '"Sinker"'
             id: 280
