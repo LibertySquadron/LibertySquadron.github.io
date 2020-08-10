@@ -24,6 +24,19 @@ String.prototype.canonicalize = function() {
 exportObj.basicCardData = function() {
   return {
     ships: {
+      "X-Wing": {
+        name: "X-Wing",
+        xws: "T-65 X-wing".canonicalize(),
+        factions: ["Rebel Alliance"],
+        attack: 3,
+        agility: 2,
+        hull: 4,
+        shields: 2,
+        actions: ["Focus", "Lock", "Barrel Roll"],
+        actionsred: [],
+        maneuvers: [[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 2, 2, 2, 0, 0, 0, 0, 0, 0], [1, 2, 2, 2, 1, 0, 0, 0, 0, 0], [1, 1, 1, 1, 1, 0, 0, 0, 3, 3], [0, 0, 1, 0, 0, 3, 0, 0, 0, 0]],
+        autoequip: ["Servomotor S-Foils"]
+      },
       "Y-Wing": {
         name: "Y-Wing",
         xws: "BTL-A4 Y-wing".canonicalize(),
@@ -403,19 +416,6 @@ exportObj.basicCardData = function() {
         actionsred: ["Barrel Roll"],
         maneuvers: [[0, 0, 0, 0, 0, 0], [0, 2, 2, 2, 0, 0], [1, 2, 2, 2, 1, 0], [3, 1, 1, 1, 3, 0], [0, 0, 3, 0, 0, 3]]
       },
-      "Fang Fighter": {
-        name: "Fang Fighter",
-        canonical_name: 'Protectorate Starfighter'.canonicalize(),
-        xws: "Fang Fighter".canonicalize(),
-        factions: ["Scum and Villainy"],
-        attack: 3,
-        agility: 3,
-        hull: 4,
-        shields: 0,
-        actions: ["Focus", "Lock", "Barrel Roll", "R> Focus", "Boost", "R> Focus"],
-        actionsred: [],
-        maneuvers: [[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [1, 0, 0, 0, 1, 0, 0, 0, 0, 0], [2, 2, 2, 2, 2, 0, 0, 0, 3, 3], [1, 1, 2, 1, 1, 0, 0, 0, 0, 0], [0, 0, 1, 0, 0, 3, 0, 0, 0, 0], [0, 0, 1, 0, 0, 0, 0, 0, 0, 0]]
-      },
       "Lancer-Class Pursuit Craft": {
         name: "Lancer-Class Pursuit Craft",
         xws: "Lancer-class Pursuit Craft".canonicalize(),
@@ -555,19 +555,6 @@ exportObj.basicCardData = function() {
         actionsred: ["Coordinate"],
         maneuvers: [[0, 0, 3, 0, 0, 0, 0, 0], [0, 2, 2, 2, 0, 0, 0, 0], [3, 1, 2, 1, 3, 0, 0, 0], [0, 1, 1, 1, 0, 3, 0, 0]]
       },
-      "T-70 X-Wing": {
-        name: "T-70 X-Wing",
-        xws: "T-70 X-wing".canonicalize(),
-        factions: ["Resistance"],
-        attack: 3,
-        agility: 2,
-        hull: 4,
-        shields: 3,
-        actions: ["Focus", "Lock", "Boost"],
-        actionsred: [],
-        maneuvers: [[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 2, 2, 2, 0, 0, 0, 0, 0, 0], [1, 2, 2, 2, 1, 0, 0, 0, 0, 0], [1, 1, 2, 1, 1, 0, 0, 0, 3, 3], [0, 0, 1, 0, 0, 3, 0, 0, 0, 0]],
-        autoequip: ["Integrated S-Foils"]
-      },
       "RZ-2 A-Wing": {
         name: "RZ-2 A-Wing",
         xws: "RZ-2 A-wing".canonicalize(),
@@ -579,6 +566,18 @@ exportObj.basicCardData = function() {
         actions: ["Focus", "Evade", "Lock", "Barrel Roll", "Boost"],
         actionsred: [],
         maneuvers: [[0, 0, 0, 0, 0, 0, 0, 0], [1, 0, 0, 0, 1, 0, 0, 0], [2, 2, 2, 2, 2, 0, 0, 0], [1, 2, 2, 2, 1, 0, 3, 3], [0, 0, 2, 0, 0, 0, 0, 0], [0, 0, 2, 0, 0, 3, 0, 0]]
+      },
+      "TIE/FO Fighter": {
+        name: "TIE/FO Fighter",
+        xws: "TIE/fo Fighter".canonicalize(),
+        factions: ["First Order"],
+        attack: 2,
+        agility: 3,
+        hull: 3,
+        shields: 1,
+        actions: ["Focus", "Evade", "Lock", "Barrel Roll"],
+        actionsred: [],
+        maneuvers: [[0, 0, 0, 0, 0, 0, 0, 0], [1, 0, 0, 0, 1, 0, 0, 0], [2, 2, 2, 2, 2, 0, 3, 3], [1, 1, 2, 1, 1, 0, 0, 0], [0, 0, 1, 0, 0, 3, 0, 0], [0, 0, 1, 0, 0, 0, 0, 0]]
       },
       "TIE/VN Silencer": {
         name: "TIE/VN Silencer",
@@ -944,6 +943,82 @@ exportObj.basicCardData = function() {
     },
     pilotsById: [
       {
+        name: "Jek Porkins",
+        id: 3,
+        unique: true,
+        faction: "Rebel Alliance",
+        ship: "X-Wing",
+        skill: 4,
+        points: 45,
+        slots: ["Talent", "Torpedo", "Astromech", "Modification", "Configuration"]
+      }, {
+        name: "Luke Skywalker",
+        id: 4,
+        unique: true,
+        faction: "Rebel Alliance",
+        ship: "X-Wing",
+        skill: 5,
+        lightside: true,
+        force: 2,
+        points: 62,
+        slots: ["Force", "Torpedo", "Astromech", "Modification", "Configuration"]
+      }, {
+        name: "Garven Dreis (X-Wing)",
+        canonical_name: 'Garven Dreis'.canonicalize(),
+        id: 6,
+        unique: true,
+        xws: "garvendreis-t65xwing",
+        faction: "Rebel Alliance",
+        ship: "X-Wing",
+        skill: 4,
+        points: 47,
+        slots: ["Talent", "Torpedo", "Astromech", "Modification", "Configuration"]
+      }, {
+        name: "Biggs Darklighter",
+        id: 7,
+        unique: true,
+        faction: "Rebel Alliance",
+        ship: "X-Wing",
+        skill: 3,
+        points: 48,
+        slots: ["Torpedo", "Astromech", "Modification", "Configuration"]
+      }, {
+        name: "Edrio Two Tubes",
+        id: 8,
+        unique: true,
+        faction: "Rebel Alliance",
+        ship: "X-Wing",
+        skill: 2,
+        points: 43,
+        slots: ["Illicit", "Torpedo", "Astromech", "Modification", "Configuration"]
+      }, {
+        name: "Thane Kyrell",
+        id: 9,
+        unique: true,
+        faction: "Rebel Alliance",
+        ship: "X-Wing",
+        skill: 5,
+        points: 48,
+        slots: ["Talent", "Torpedo", "Astromech", "Modification", "Configuration"]
+      }, {
+        name: "Leevan Tenza",
+        id: 10,
+        unique: true,
+        faction: "Rebel Alliance",
+        ship: "X-Wing",
+        skill: 3,
+        points: 44,
+        slots: ["Illicit", "Talent", "Torpedo", "Astromech", "Modification", "Configuration"]
+      }, {
+        name: "Kullbee Sperado",
+        id: 12,
+        unique: true,
+        faction: "Rebel Alliance",
+        ship: "X-Wing",
+        skill: 4,
+        points: 46,
+        slots: ["Illicit", "Talent", "Torpedo", "Astromech", "Modification", "Configuration"]
+      }, {
         name: "Sabine Wren (TIE Fighter)",
         canonical_name: 'Sabine Wren'.canonicalize(),
         id: 13,
@@ -1253,15 +1328,6 @@ exportObj.basicCardData = function() {
         points: 52,
         slots: ["Talent", "Sensor", "Crew", "Crew", "Modification", "Configuration", "Illicit"]
       }, {
-        name: "Benthic Two Tubes",
-        id: 36,
-        unique: true,
-        faction: "Rebel Alliance",
-        ship: "U-Wing",
-        skill: 2,
-        points: 46,
-        slots: ["Illicit", "Sensor", "Crew", "Crew", "Modification", "Configuration"]
-      }, {
         name: "Blue Squadron Scout",
         id: 37,
         faction: "Rebel Alliance",
@@ -1381,15 +1447,6 @@ exportObj.basicCardData = function() {
         points: 29,
         slots: ["Device", "Crew", "Modification", "Modification", "Title"]
       }, {
-        name: "Jake Farrell",
-        id: 50,
-        unique: true,
-        faction: "Rebel Alliance",
-        ship: "A-Wing",
-        skill: 4,
-        points: 36,
-        slots: ["Talent", "Talent", "Missile"]
-      }, {
         name: "Arvel Crynyd",
         id: 51,
         unique: true,
@@ -1474,17 +1531,6 @@ exportObj.basicCardData = function() {
         skill: 1,
         points: 42,
         slots: ["Crew", "Crew", "Modification"]
-      }, {
-        name: "Hera Syndulla (VCX-100)",
-        id: 61,
-        unique: true,
-        canonical_name: 'Hera Syndulla'.canonicalize(),
-        xws: "herasyndulla-vcx100lightfreighter",
-        faction: "Rebel Alliance",
-        ship: "VCX-100",
-        skill: 5,
-        points: 72,
-        slots: ["Talent", "Sensor", "Torpedo", "Turret", "Crew", "Crew", "Modification", "Gunner", "Title"]
       }, {
         name: "Kanan Jarrus",
         id: 62,
@@ -2685,15 +2731,6 @@ exportObj.basicCardData = function() {
         points: 33,
         slots: ["Talent", "Gunner", "Device", "Modification"]
       }, {
-        name: "Rear Admiral Chiraneau",
-        id: 214,
-        unique: true,
-        faction: "Galactic Empire",
-        ship: "VT-49 Decimator",
-        skill: 5,
-        points: 76,
-        slots: ["Talent", "Torpedo", "Crew", "Crew", "Crew", "Gunner", "Device", "Modification", "Title"]
-      }, {
         name: "Captain Oicunn",
         id: 215,
         unique: true,
@@ -2839,6 +2876,34 @@ exportObj.basicCardData = function() {
         id: 232,
         skip: true
       }, {
+        name: '"Midnight"',
+        id: 233,
+        unique: true,
+        faction: "First Order",
+        ship: "TIE/FO Fighter",
+        skill: 6,
+        points: 42,
+        slots: ["Talent", "Tech", "Modification"]
+      }, {
+        name: '"Longshot"',
+        id: 234,
+        skip: true,
+        unique: true,
+        faction: "First Order",
+        ship: "TIE/FO Fighter",
+        skill: 3,
+        points: 32,
+        slots: ["Talent", "Tech", "Modification"]
+      }, {
+        name: '"Muse"',
+        id: 235,
+        unique: true,
+        faction: "First Order",
+        ship: "TIE/FO Fighter",
+        skill: 2,
+        points: 30,
+        slots: ["Talent", "Tech", "Modification"]
+      }, {
         name: '"Blackout"',
         id: 237,
         unique: true,
@@ -2900,6 +2965,16 @@ exportObj.basicCardData = function() {
         recurring: true,
         points: 47,
         slots: ["Talent", "Tech", "Missile", "Gunner", "Sensor", "Modification"]
+      }, {
+        name: "Rey",
+        id: 244,
+        unique: true,
+        faction: "Resistance",
+        ship: "Scavenged YT-1300",
+        skill: 5,
+        points: 68,
+        force: 2,
+        slots: ["Force", "Missile", "Crew", "Crew", "Gunner", "Illicit", "Modification", "Title"]
       }, {
         name: "Han Solo (Resistance)",
         id: 245,
@@ -2967,67 +3042,6 @@ exportObj.basicCardData = function() {
         points: 61,
         slots: ["Tech", "Tech", "Crew", "Crew", "Crew", "Cannon", "Sensor", "Modification"]
       }, {
-        name: "Kare Kun",
-        id: 252,
-        unique: true,
-        faction: "Resistance",
-        ship: "T-70 X-Wing",
-        skill: 4,
-        points: 51,
-        slots: ["Talent", "Astromech", "Modification", "Configuration", "Tech", "Title", "HardpointShip"]
-      }, {
-        name: "Joph Seastriker",
-        id: 253,
-        unique: true,
-        faction: "Resistance",
-        ship: "T-70 X-Wing",
-        skill: 3,
-        points: 49,
-        slots: ["Talent", "Astromech", "Modification", "Configuration", "Tech", "Title", "HardpointShip"]
-      }, {
-        name: "Lieutenant Bastian",
-        id: 254,
-        unique: true,
-        faction: "Resistance",
-        ship: "T-70 X-Wing",
-        skill: 2,
-        points: 47,
-        slots: ["Astromech", "Modification", "Configuration", "Tech", "Title", "HardpointShip"]
-      }, {
-        name: "Jaycris Tubbs",
-        id: 255,
-        unique: true,
-        faction: "Resistance",
-        ship: "T-70 X-Wing",
-        skill: 1,
-        points: 48,
-        slots: ["Astromech", "Modification", "Configuration", "Tech", "Title", "HardpointShip"]
-      }, {
-        name: "Black Squadron Ace (T-70)",
-        id: 256,
-        faction: "Resistance",
-        xws: "blacksquadronace-t70xwing",
-        ship: "T-70 X-Wing",
-        skill: 4,
-        points: 47,
-        slots: ["Talent", "Astromech", "Modification", "Configuration", "Tech", "Title", "HardpointShip"]
-      }, {
-        name: "Red Squadron Expert",
-        id: 257,
-        faction: "Resistance",
-        ship: "T-70 X-Wing",
-        skill: 3,
-        points: 44,
-        slots: ["Talent", "Astromech", "Modification", "Configuration", "Tech", "Title", "HardpointShip"]
-      }, {
-        name: "Blue Squadron Rookie",
-        id: 258,
-        faction: "Resistance",
-        ship: "T-70 X-Wing",
-        skill: 1,
-        points: 42,
-        slots: ["Astromech", "Modification", "Configuration", "Tech", "Title", "HardpointShip"]
-      }, {
         name: "Zeta Squadron Survivor",
         id: 259,
         faction: "First Order",
@@ -3043,6 +3057,85 @@ exportObj.basicCardData = function() {
         skill: 1,
         points: 51,
         slots: ["Sensor", "Tech", "Crew", "Gunner", "Gunner", "Device", "Device", "Modification"]
+      }, {
+        name: "TN-3465",
+        id: 261,
+        unique: true,
+        faction: "First Order",
+        ship: "TIE/FO Fighter",
+        skill: 2,
+        points: 28,
+        slots: ["Tech", "Modification"]
+      }, {
+        name: '"Scorch"',
+        id: 262,
+        unique: true,
+        faction: "First Order",
+        ship: "TIE/FO Fighter",
+        skill: 4,
+        points: 33,
+        slots: ["Talent", "Tech", "Modification"]
+      }, {
+        name: '"Longshot"',
+        id: 263,
+        unique: true,
+        faction: "First Order",
+        ship: "TIE/FO Fighter",
+        skill: 3,
+        points: 31,
+        slots: ["Talent", "Tech", "Modification"]
+      }, {
+        name: '"Static"',
+        id: 264,
+        unique: true,
+        faction: "First Order",
+        ship: "TIE/FO Fighter",
+        skill: 4,
+        points: 33,
+        slots: ["Talent", "Tech", "Modification"]
+      }, {
+        name: "Lieutenant Rivas",
+        id: 265,
+        unique: true,
+        faction: "First Order",
+        ship: "TIE/FO Fighter",
+        skill: 1,
+        points: 27,
+        slots: ["Tech", "Modification"]
+      }, {
+        name: "Commander Malarus",
+        id: 266,
+        unique: true,
+        faction: "First Order",
+        ship: "TIE/FO Fighter",
+        skill: 5,
+        points: 38,
+        charge: 2,
+        slots: ["Talent", "Tech", "Modification"]
+      }, {
+        name: "Omega Squadron Ace",
+        id: 267,
+        faction: "First Order",
+        ship: "TIE/FO Fighter",
+        skill: 3,
+        points: 28,
+        slots: ["Talent", "Tech", "Modification"]
+      }, {
+        name: "Zeta Squadron Pilot",
+        id: 268,
+        faction: "First Order",
+        ship: "TIE/FO Fighter",
+        skill: 2,
+        points: 26,
+        slots: ["Tech", "Modification"]
+      }, {
+        name: "Epsilon Squadron Cadet",
+        id: 269,
+        faction: "First Order",
+        ship: "TIE/FO Fighter",
+        skill: 1,
+        points: 25,
+        slots: ["Tech", "Modification"]
       }, {
         name: "Greer Sonnel",
         id: 270,
@@ -3223,6 +3316,15 @@ exportObj.basicCardData = function() {
         points: 64,
         slots: ["Tech", "Tech", "Crew", "Crew", "Crew", "Cannon", "Sensor", "Modification"]
       }, {
+        name: '"Null"',
+        id: 290,
+        unique: true,
+        faction: "First Order",
+        ship: "TIE/FO Fighter",
+        skill: 0,
+        points: 30,
+        slots: ["Tech", "Modification"]
+      }, {
         name: "Cat",
         id: 291,
         unique: true,
@@ -3267,44 +3369,6 @@ exportObj.basicCardData = function() {
         skill: 2,
         points: 59,
         slots: ["Missile", "Crew", "Crew", "Gunner", "Illicit", "Modification", "Title"]
-      }, {
-        name: "Jessika Pava",
-        id: 296,
-        unique: true,
-        faction: "Resistance",
-        ship: "T-70 X-Wing",
-        skill: 3,
-        points: 51,
-        charge: 1,
-        recurring: true,
-        slots: ["Astromech", "Modification", "Configuration", "Tech", "Title", "HardpointShip"]
-      }, {
-        name: "Temmin Wexley",
-        id: 297,
-        unique: true,
-        faction: "Resistance",
-        ship: "T-70 X-Wing",
-        skill: 4,
-        points: 53,
-        slots: ["Talent", "Astromech", "Modification", "Configuration", "Tech", "Title", "HardpointShip"]
-      }, {
-        name: "Nien Nunb",
-        id: 298,
-        unique: true,
-        faction: "Resistance",
-        ship: "T-70 X-Wing",
-        skill: 5,
-        points: 55,
-        slots: ["Talent", "Astromech", "Modification", "Configuration", "Tech", "Title", "HardpointShip"]
-      }, {
-        name: "Ello Asty",
-        id: 299,
-        unique: true,
-        faction: "Resistance",
-        ship: "T-70 X-Wing",
-        skill: 5,
-        points: 55,
-        slots: ["Talent", "Astromech", "Modification", "Configuration", "Tech", "Title", "HardpointShip"]
       }, {
         name: "Green Squadron Expert",
         id: 300,
@@ -3679,6 +3743,14 @@ exportObj.basicCardData = function() {
         points: 44,
         slots: ["Talent", "Torpedo", "Crew", "Gunner", "Astromech", "Modification"]
       }, {
+        name: "104th Battalion Pilot",
+        id: 341,
+        faction: "Galactic Republic",
+        ship: "ARC-170",
+        skill: 2,
+        points: 42,
+        slots: ["Torpedo", "Crew", "Gunner", "Astromech", "Modification"]
+      }, {
         name: '"Wolffe"',
         id: 342,
         unique: true,
@@ -3888,6 +3960,15 @@ exportObj.basicCardData = function() {
         skill: 2,
         points: 29,
         slots: ["Turret", "Torpedo", "Gunner", "Astromech", "Device", "Modification"]
+      }, {
+        name: '"Broadside"',
+        id: 364,
+        unique: true,
+        faction: "Galactic Republic",
+        ship: "BTL-B Y-Wing",
+        skill: 3,
+        points: 36,
+        slots: ["Talent", "Turret", "Torpedo", "Gunner", "Astromech", "Device", "Modification"]
       }, {
         name: '"Matchstick"',
         id: 365,
@@ -4910,11 +4991,6 @@ exportObj.basicCardData = function() {
         slot: "Crew",
         points: 4
       }, {
-        name: "Perceptive Copilot",
-        id: 54,
-        slot: "Crew",
-        points: 8
-      }, {
         name: "Qi'ra",
         id: 55,
         slot: "Crew",
@@ -5390,11 +5466,6 @@ exportObj.basicCardData = function() {
           return (ship.data.medium != null) || (ship.data.large != null);
         }
       }, {
-        name: "Advanced Sensors",
-        id: 111,
-        slot: "Sensor",
-        points: 10
-      }, {
         name: "Collision Detector",
         id: 112,
         slot: "Sensor",
@@ -5480,6 +5551,11 @@ exportObj.basicCardData = function() {
         id: 125,
         slot: "Talent",
         points: 1
+      }, {
+        name: "Predator",
+        id: 127,
+        slot: "Talent",
+        points: 2
       }, {
         name: "Ruthless",
         id: 128,
@@ -5743,14 +5819,6 @@ exportObj.basicCardData = function() {
         modifier_func: function(stats) {
           return stats.attack = 3;
         }
-      }, {
-        name: "Outrider",
-        id: 157,
-        slot: "Title",
-        points: 14,
-        unique: true,
-        faction: "Rebel Alliance",
-        ship: "YT-2400"
       }, {
         id: 158,
         skip: true
@@ -6096,6 +6164,20 @@ exportObj.basicCardData = function() {
         id: 199,
         slot: "Force",
         points: 3
+      }, {
+        name: "Calibrated Laser Targeting",
+        id: 200,
+        slot: "Configuration",
+        ship: "Delta-7 Aethersprite",
+        pointsarray: [0, 0, 1, 2, 3, 4, 5],
+        variableinit: true,
+        restriction_func: function(ship, upgrade_obj) {
+          return ship.hasAnotherUnoccupiedSlotLike(upgrade_obj, "Modification");
+        },
+        validation_func: function(ship, upgrade_obj) {
+          return upgrade_obj.occupiesAnUpgradeSlot("Modification");
+        },
+        also_occupies_upgrades: ["Modification"]
       }, {
         name: "Biohexacrypt Codes",
         id: 202,
@@ -7778,13 +7860,6 @@ exportObj.basicCardData = function() {
         threat: 3,
         upgrades: ["Predator", "Advanced Sensors", "Grand Inquisitor"]
       }, {
-        id: 34,
-        faction: "Galactic Empire",
-        pilot: '"Echo"',
-        ship: "TIE Phantom",
-        threat: 3,
-        upgrades: ["Lone Wolf", "Collision Detector", "Perceptive Copilot", "Stealth Device"]
-      }, {
         id: 35,
         faction: "Galactic Empire",
         pilot: "Imdaar Test Pilot",
@@ -8892,47 +8967,6 @@ exportObj.basicCardData = function() {
         threat: 3,
         upgrades: ["Perceptive Copilot", "Inertial Dampeners", "Seismic Charges"]
       }, {
-        id: 191,
-        faction: "Scum and Villainy",
-        pilot: "Fenn Rau",
-        ship: "Fang Fighter",
-        threat: 3,
-        upgrades: ["Daredevil", "Afterburners", "Hull Upgrade"]
-      }, {
-        id: 192,
-        faction: "Scum and Villainy",
-        pilot: "Kad Solus",
-        ship: "Fang Fighter",
-        threat: 2,
-        upgrades: ["Fearless"]
-      }, {
-        id: 193,
-        faction: "Scum and Villainy",
-        pilot: "Zealous Recruit",
-        ship: "Fang Fighter",
-        threat: 2,
-        upgrades: ["Proton Torpedoes"]
-      }, {
-        id: 194,
-        faction: "Scum and Villainy",
-        pilot: "Joy Rekkoff",
-        ship: "Fang Fighter",
-        threat: 3,
-        upgrades: ["Predator", "Ion Torpedoes", "Afterburners", "Hull Upgrade"]
-      }, {
-        id: 195,
-        faction: "Scum and Villainy",
-        pilot: "Old Teroch",
-        ship: "Fang Fighter",
-        threat: 2
-      }, {
-        id: 196,
-        faction: "Scum and Villainy",
-        pilot: "Skull Squadron Pilot",
-        ship: "Fang Fighter",
-        threat: 2,
-        upgrades: ["Fearless"]
-      }, {
         id: 197,
         faction: "Scum and Villainy",
         pilot: "Ahhav",
@@ -9491,7 +9525,7 @@ exportObj.basicCardData = function() {
         id: 273,
         faction: "Resistance",
         pilot: "Poe Dameron",
-        ship: "T-70 X-Wing",
+        ship: " T-70  X-Wing",
         threat: 4,
         upgrades: ["Proton Torpedoes", "BB-8", "Black One", "Integrated S-Foils", "Afterburners"]
       }, {
@@ -11483,7 +11517,6 @@ exportObj.cardLoaders.English = function() {
   exportObj.renameShip("Attack Shuttle", "Attack Shuttle");
   exportObj.renameShip("HWK-290", "HWK-290 Light Freighter");
   exportObj.renameShip("A-Wing", "RZ-1 A-Wing");
-  exportObj.renameShip("Fang Fighter", "Fang Fighter");
   exportObj.renameShip("Z-95 Headhunter", "Z-95-AF4 Headhunter");
   exportObj.renameShip("M12-L Kimogila Fighter", "M12-L Kimogila Fighter");
   exportObj.renameShip("E-Wing", "E-Wing");
@@ -11494,10 +11527,10 @@ exportObj.cardLoaders.English = function() {
   exportObj.renameShip("JumpMaster 5000", "JumpMaster 5000");
   exportObj.renameShip("Customized YT-1300", "Customized YT-1300 Light Freighter");
   exportObj.renameShip("Escape Craft", "Escape Craft");
+  exportObj.renameShip("TIE/FO Fighter", "TIE/FO Fighter");
   exportObj.renameShip("TIE/SF Fighter", "TIE/SF Fighter");
   exportObj.renameShip("Upsilon-Class Command Shuttle", "Upsilon-Class Command Shuttle");
   exportObj.renameShip("TIE/VN Silencer", "TIE/vn Silencer");
-  exportObj.renameShip("T-70 X-Wing", "T-70 X-Wing");
   exportObj.renameShip("RZ-2 A-Wing", "RZ-2 A-Wing");
   exportObj.renameShip("MG-100 StarFortress", "MG-100 StarFortress");
   exportObj.renameShip("Mining Guild TIE Fighter", "Mining Guild TIE Fighter");
