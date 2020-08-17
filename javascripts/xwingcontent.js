@@ -530,6 +530,19 @@ exportObj.basicCardData = function() {
         actionsred: ["Barrel Roll"],
         maneuvers: [[0, 0, 0, 0, 0, 0], [3, 1, 2, 1, 3, 0], [1, 2, 2, 2, 1, 0], [1, 1, 2, 1, 1, 0], [0, 0, 0, 0, 0, 3]]
       },
+      "Sheathipede-Class Shuttle": {
+        name: "Sheathipede-Class Shuttle",
+        xws: "Sheathipede-class Shuttle".canonicalize(),
+        factions: ["Rebel Alliance"],
+        attack: 2,
+        attackb: 2,
+        agility: 2,
+        hull: 4,
+        shields: 1,
+        actions: ["Focus", "Coordinate"],
+        actionsred: [],
+        maneuvers: [[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 1, 2, 1, 0, 0, 0, 0, 0, 0, 0, 3, 0], [1, 2, 2, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0], [3, 1, 2, 1, 3, 3, 0, 0, 0, 0, 0, 0, 0], [0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]
+      },
       "TIE Reaper": {
         name: "TIE Reaper",
         xws: "TIE Reaper".canonicalize(),
@@ -706,18 +719,6 @@ exportObj.basicCardData = function() {
         actionsred: [],
         maneuvers: [[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [1, 0, 0, 0, 1, 3, 0, 0, 0, 0], [2, 1, 2, 1, 2, 0, 0, 0, 3, 3], [1, 3, 2, 3, 1, 0, 0, 0, 0, 0], [0, 0, 2, 0, 0, 0, 0, 0, 0, 0], [0, 0, 1, 0, 0, 0, 0, 0, 0, 0]]
       },
-      "Belbullab-22 Starfighter": {
-        name: "Belbullab-22 Starfighter",
-        xws: "Belbullab-22 Starfighter".canonicalize(),
-        factions: ["Separatist Alliance"],
-        attack: 3,
-        agility: 2,
-        hull: 3,
-        shields: 2,
-        actions: ["Focus", "Lock", "Barrel Roll", "R> Focus", "Boost", "R> Focus"],
-        actionsred: [],
-        maneuvers: [[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [1, 1, 0, 1, 1, 0, 0, 0, 0, 0], [1, 2, 2, 2, 1, 0, 0, 0, 0, 0], [3, 1, 2, 1, 3, 0, 3, 3, 0, 0], [0, 0, 1, 0, 0, 0, 0, 0, 0, 0], [0, 0, 1, 0, 0, 0, 0, 0, 0, 0]]
-      },
       "Naboo Royal N-1 Starfighter": {
         name: "Naboo Royal N-1 Starfighter",
         xws: "Naboo Royal N-1 Starfighter".canonicalize(),
@@ -801,17 +802,6 @@ exportObj.basicCardData = function() {
         actions: ["Focus", "Evade", "Barrel Roll", "Slam"],
         actionsred: [],
         maneuvers: [[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [1, 2, 2, 2, 1, 0, 0, 0, 0, 0], [1, 1, 2, 1, 1, 0, 0, 0, 0, 0], [3, 1, 1, 1, 3, 0, 0, 0, 3, 3], [0, 0, 3, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]
-      },
-      "TIE/Ba Interceptor": {
-        name: "TIE/Ba Interceptor",
-        xws: "TIE/Ba Interceptor".canonicalize(),
-        factions: ["First Order"],
-        attack: 3,
-        agility: 3,
-        hull: 2,
-        shields: 2,
-        actions: ["Focus", "Evade", "Lock", "Barrel Roll", "Boost"],
-        maneuvers: [[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [2, 2, 0, 2, 2, 0, 0, 0, 0, 0], [1, 2, 2, 2, 1, 0, 3, 3, 0, 0], [1, 1, 2, 1, 1, 0, 0, 0, 0, 0], [0, 0, 2, 0, 0, 0, 0, 0, 0, 0], [0, 0, 1, 0, 0, 3, 0, 0, 0, 0]]
       },
       "Xi-class Light Shuttle": {
         name: "Xi-class Light Shuttle",
@@ -1430,15 +1420,6 @@ exportObj.basicCardData = function() {
         points: 38,
         slots: ["Talent", "Device", "Crew", "Modification", "Modification", "Title"]
       }, {
-        name: "Kyle Katarn",
-        id: 48,
-        unique: true,
-        faction: "Rebel Alliance",
-        ship: "HWK-290",
-        skill: 3,
-        points: 33,
-        slots: ["Talent", "Device", "Crew", "Modification", "Modification", "Title"]
-      }, {
         name: "Rebel Scout",
         id: 49,
         faction: "Rebel Alliance",
@@ -1601,6 +1582,51 @@ exportObj.basicCardData = function() {
         skill: 2,
         points: 32,
         slots: ["Crew", "Modification", "Turret", "Title"]
+      }, {
+        name: "Fenn Rau (Sheathipede)",
+        id: 69,
+        unique: true,
+        xws: "fennrau-sheathipedeclassshuttle",
+        faction: "Rebel Alliance",
+        ship: "Sheathipede-Class Shuttle",
+        skill: 6,
+        points: 50,
+        slots: ["Talent", "Crew", "Modification", "Astromech", "Title"]
+      }, {
+        name: "Ezra Bridger (Sheathipede)",
+        canonical_name: 'Ezra Bridger'.canonicalize(),
+        id: 70,
+        unique: true,
+        xws: "ezrabridger-sheathipedeclassshuttle",
+        faction: "Rebel Alliance",
+        ship: "Sheathipede-Class Shuttle",
+        skill: 3,
+        force: 1,
+        points: 40,
+        slots: ["Force", "Crew", "Modification", "Astromech", "Title"]
+      }, {
+        name: '"Zeb" Orrelios (Sheathipede)',
+        canonical_name: '"Zeb" Orrelios'.canonicalize(),
+        id: 71,
+        unique: true,
+        xws: "zeborrelios-sheathipedeclassshuttle",
+        faction: "Rebel Alliance",
+        ship: "Sheathipede-Class Shuttle",
+        skill: 2,
+        points: 33,
+        slots: ["Talent", "Crew", "Modification", "Astromech", "Title"]
+      }, {
+        name: "AP-5",
+        id: 72,
+        unique: true,
+        faction: "Rebel Alliance",
+        ship: "Sheathipede-Class Shuttle",
+        skill: 1,
+        points: 32,
+        slots: ["Talent", "Crew", "Modification", "Astromech", "Title"],
+        ship_override: {
+          actions: ["Calculate", "Coordinate"]
+        }
       }, {
         name: "Blade Squadron Veteran",
         id: 75,
@@ -2190,6 +2216,15 @@ exportObj.basicCardData = function() {
         points: 29,
         slots: ["Tech", "Crew", "Device", "Illicit", "Modification"]
       }, {
+        name: "Unkar Plutt",
+        id: 142,
+        unique: true,
+        faction: "Scum and Villainy",
+        ship: "Quadjumper",
+        skill: 2,
+        points: 29,
+        slots: ["Tech", "Crew", "Device", "Illicit", "Modification"]
+      }, {
         name: "Jakku Gunrunner",
         id: 143,
         faction: "Scum and Villainy",
@@ -2403,6 +2438,15 @@ exportObj.basicCardData = function() {
         ship: "Lambda-Class Shuttle",
         skill: 4,
         points: 48,
+        slots: ["Sensor", "Cannon", "Crew", "Crew", "Modification", "Title"]
+      }, {
+        name: "Lieutenant Sai",
+        id: 166,
+        unique: true,
+        faction: "Galactic Empire",
+        ship: "Lambda-Class Shuttle",
+        skill: 3,
+        points: 47,
         slots: ["Sensor", "Cannon", "Crew", "Crew", "Modification", "Title"]
       }, {
         name: "Colonel Jendon",
@@ -2627,15 +2671,6 @@ exportObj.basicCardData = function() {
         points: 35,
         slots: ["Sensor", "Torpedo", "Missile", "Missile", "Gunner", "Device", "Device", "Modification"]
       }, {
-        name: '"Echo"',
-        id: 200,
-        unique: true,
-        faction: "Galactic Empire",
-        ship: "TIE Phantom",
-        skill: 4,
-        points: 51,
-        slots: ["Talent", "Sensor", "Gunner", "Modification"]
-      }, {
         name: "Sigma Squadron Ace",
         id: 201,
         faction: "Galactic Empire",
@@ -2730,6 +2765,14 @@ exportObj.basicCardData = function() {
         skill: 3,
         points: 33,
         slots: ["Talent", "Gunner", "Device", "Modification"]
+      }, {
+        name: "Planetary Sentinel",
+        id: 213,
+        faction: "Galactic Empire",
+        ship: "TIE Striker",
+        skill: 1,
+        points: 31,
+        slots: ["Gunner", "Device", "Modification"]
       }, {
         name: "Captain Oicunn",
         id: 215,
@@ -2903,6 +2946,18 @@ exportObj.basicCardData = function() {
         skill: 2,
         points: 30,
         slots: ["Talent", "Tech", "Modification"]
+      }, {
+        name: "Kylo Ren",
+        id: 236,
+        unique: true,
+        faction: "First Order",
+        ship: "TIE/VN Silencer",
+        skill: 5,
+        force: 2,
+        darkside: true,
+        points: 76,
+        applies_condition: 'I\'ll Show You the Dark Side'.canonicalize(),
+        slots: ["Force", "Tech", "Torpedo", "Missile"]
       }, {
         name: '"Blackout"',
         id: 237,
@@ -3093,15 +3148,6 @@ exportObj.basicCardData = function() {
         skill: 4,
         points: 33,
         slots: ["Talent", "Tech", "Modification"]
-      }, {
-        name: "Lieutenant Rivas",
-        id: 265,
-        unique: true,
-        faction: "First Order",
-        ship: "TIE/FO Fighter",
-        skill: 1,
-        points: 27,
-        slots: ["Tech", "Modification"]
       }, {
         name: "Commander Malarus",
         id: 266,
@@ -3413,44 +3459,6 @@ exportObj.basicCardData = function() {
         skill: 1,
         points: 22,
         slots: ["Modification"]
-      }, {
-        name: "General Grievous",
-        id: 305,
-        faction: "Separatist Alliance",
-        ship: "Belbullab-22 Starfighter",
-        unique: true,
-        skill: 4,
-        points: 44,
-        slots: ["Talent", "Tactical Relay", "Modification", "Title"]
-      }, {
-        name: "Wat Tambor",
-        id: 306,
-        faction: "Separatist Alliance",
-        ship: "Belbullab-22 Starfighter",
-        unique: true,
-        skill: 3,
-        points: 42,
-        slots: ["Talent", "Tactical Relay", "Modification", "Title"]
-      }, {
-        name: "Feethan Ottraw Autopilot",
-        id: 307,
-        faction: "Separatist Alliance",
-        ship: "Belbullab-22 Starfighter",
-        skill: 1,
-        points: 35,
-        slots: ["Tactical Relay", "Modification", "Title"],
-        ship_override: {
-          actions: ["Calculate", "Lock", "Barrel Roll", "R> Calculate", "Boost", "R> Calculate"]
-        }
-      }, {
-        name: "Captain Sear",
-        id: 308,
-        faction: "Separatist Alliance",
-        ship: "Belbullab-22 Starfighter",
-        unique: true,
-        skill: 2,
-        points: 45,
-        slots: ["Tactical Relay", "Modification", "Title"]
       }, {
         name: "Precise Hunter",
         id: 309,
@@ -3777,14 +3785,6 @@ exportObj.basicCardData = function() {
         points: 21,
         slots: ["Missile", "Configuration", "Modification"]
       }, {
-        name: "Skakoan Ace",
-        id: 344,
-        faction: "Separatist Alliance",
-        ship: "Belbullab-22 Starfighter",
-        skill: 3,
-        points: 38,
-        slots: ["Talent", "Tactical Relay", "Modification", "Title"]
-      }, {
         name: "Rose Tico",
         id: 345,
         unique: true,
@@ -3884,15 +3884,6 @@ exportObj.basicCardData = function() {
         skill: 2,
         points: 28,
         slots: ["Talent", "Modification"]
-      }, {
-        name: "Chertek",
-        unique: true,
-        id: 356,
-        faction: "Separatist Alliance",
-        ship: "Nantex-Class Starfighter",
-        skill: 4,
-        points: 34,
-        slots: ["Talent", "Talent"]
       }, {
         name: "Sun Fac",
         unique: true,
@@ -4118,32 +4109,6 @@ exportObj.basicCardData = function() {
         points: 26,
         slots: ["Missile", "Astromech", "Illicit", "Modification", "Modification", "Title"]
       }, {
-        name: '"Holo"',
-        id: 382,
-        faction: "First Order",
-        unique: true,
-        skill: 5,
-        ship: "TIE/Ba Interceptor",
-        points: 53,
-        slots: ["Talent", "Tech", "Missile", "Modification"]
-      }, {
-        name: '"Ember"',
-        id: 383,
-        faction: "First Order",
-        unique: true,
-        skill: 4,
-        ship: "TIE/Ba Interceptor",
-        points: 48,
-        slots: ["Talent", "Tech", "Missile", "Modification"]
-      }, {
-        name: "First Order Provocateur",
-        id: 384,
-        faction: "First Order",
-        skill: 3,
-        ship: "TIE/Ba Interceptor",
-        points: 41,
-        slots: ["Talent", "Tech", "Missile", "Modification"]
-      }, {
         name: "Captain Phasma",
         id: 385,
         faction: "First Order",
@@ -4262,15 +4227,6 @@ exportObj.basicCardData = function() {
         points: 75,
         charge: 3,
         slots: ["Talent", "Torpedo", "Crew", "Crew", "Crew", "Gunner", "Device", "Modification", "Title"]
-      }, {
-        name: "Lieutenant LeHuse",
-        id: 397,
-        faction: "First Order",
-        unique: true,
-        skill: 5,
-        ship: "TIE/SF Fighter",
-        points: 38,
-        slots: ["Talent", "Tech", "Missile", "Gunner", "Sensor", "Modification"]
       }, {
         name: "Bossk (Z-95 Headhunter)",
         xws: "bossk-z95af4headhunter",
@@ -5506,6 +5462,15 @@ exportObj.basicCardData = function() {
           }
         }
       }, {
+        name: "Elusive",
+        id: 119,
+        slot: "Talent",
+        points: 3,
+        charge: 1,
+        restriction_func: function(ship) {
+          return ship.data.large == null;
+        }
+      }, {
         name: "Expert Handling",
         id: 120,
         slot: "Talent",
@@ -5526,11 +5491,6 @@ exportObj.basicCardData = function() {
         points: 3,
         faction: "Scum and Villainy"
       }, {
-        name: "Intimidation",
-        id: 122,
-        slot: "Talent",
-        points: 3
-      }, {
         name: "Juke",
         id: 123,
         slot: "Talent",
@@ -5546,16 +5506,6 @@ exportObj.basicCardData = function() {
         unique: true,
         recurring: true,
         charge: 1
-      }, {
-        name: "Marksmanship",
-        id: 125,
-        slot: "Talent",
-        points: 1
-      }, {
-        name: "Predator",
-        id: 127,
-        slot: "Talent",
-        points: 2
       }, {
         name: "Ruthless",
         id: 128,
@@ -5885,15 +5835,6 @@ exportObj.basicCardData = function() {
             slot: "Modification"
           }
         ]
-      }, {
-        name: "Hull Upgrade",
-        id: 164,
-        slot: "Modification",
-        pointsarray: [2, 3, 5, 7],
-        variableagility: true,
-        modifier_func: function(stats) {
-          return stats.hull += 1;
-        }
       }, {
         name: "Stealth Device",
         id: 166,
@@ -6683,6 +6624,15 @@ exportObj.basicCardData = function() {
         slot: "Talent",
         points: 5,
         ship: "Nantex-Class Starfighter"
+      }, {
+        name: "Snap Shot",
+        id: 256,
+        slot: "Talent",
+        pointsarray: [8, 9, 10, 12],
+        variablebase: true,
+        attack: 2,
+        range: "2",
+        rangebonus: true
       }, {
         name: "Agent of the Empire",
         id: 257,
@@ -11492,6 +11442,7 @@ exportObj.cardLoaders.English = function() {
   exportObj.renameShip("YT-2400", "YT-2400 Light Freighter");
   exportObj.renameShip("Auzituck Gunship", "Auzituck Gunship");
   exportObj.renameShip("Kihraxz Fighter", "Kihraxz Fighter");
+  exportObj.renameShip("Sheathipede-Class Shuttle", "Sheathipede-class Shuttle");
   exportObj.renameShip("Quadjumper", "Quadrijet Transfer Spacetug");
   exportObj.renameShip("Firespray-31", "Firespray-class Patrol Craft");
   exportObj.renameShip("TIE Fighter", "TIE/ln Fighter");

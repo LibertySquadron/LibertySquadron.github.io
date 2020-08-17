@@ -176,6 +176,7 @@ exportObj.cardLoaders.Deutsch = function() {
   exportObj.renameShip("YT-2400", "Leichter YT-2400-Frachter");
   exportObj.renameShip("Auzituck Gunship", "Auzituck-Kanonenboot");
   exportObj.renameShip("Kihraxz Fighter", "Kihraxz-Jäger");
+  exportObj.renameShip("Sheathipede-Class Shuttle", "Raumfähre der Sheathipede-Klasse");
   exportObj.renameShip("Quadjumper", "Quadrijet-Transferschlepper");
   exportObj.renameShip("Firespray-31", "Patrouillenboot der Firespray-Klasse");
   exportObj.renameShip("TIE Fighter", "TIE/ln-Jäger");
@@ -220,7 +221,6 @@ exportObj.cardLoaders.Deutsch = function() {
   exportObj.renameShip("Mining Guild TIE Fighter", "Modifizierter TIE/ln-Jäger");
   exportObj.renameShip("Scavenged YT-1300", "YT-1300 vom Schrottplatz");
   exportObj.renameShip("V-19 Torrent", "V-19-Torrent-Sternenjäger");
-  exportObj.renameShip("Belbullab-22 Starfighter", "Bellbullab-22 Sternenjäger");
   exportObj.renameShip("Vulture-class Droid Fighter", "Droidenjäger der Vulture-Klasse");
   exportObj.renameShip("Sith Infiltrator", "Sith-Infiltrator");
   pilot_translations = {
@@ -2896,6 +2896,7 @@ exportObj.cardLoaders['Español'] = function() {
   exportObj.renameShip("YT-2400", "Carguero ligero YT-2400");
   exportObj.renameShip("Auzituck Gunship", "Cañonera Auzituck");
   exportObj.renameShip("Kihraxz Fighter", "Caza Kihraxz");
+  exportObj.renameShip("Sheathipede-Class Shuttle", "Lanzadera clase Sheathipede");
   exportObj.renameShip("Quadjumper", "Remolcador espacial cuatrimotor");
   exportObj.renameShip("Firespray-31", "Patrullera clase Firespray");
   exportObj.renameShip("TIE Fighter", "Caza TIE/ln");
@@ -4712,6 +4713,7 @@ exportObj.cardLoaders['Français'] = function() {
   exportObj.renameShip("YT-2400", "Cargo YT-2400");
   exportObj.renameShip("Auzituck Gunship", "Canonnière Auzituck");
   exportObj.renameShip("Kihraxz Fighter", "Chasseur Kihraxz");
+  exportObj.renameShip("Sheathipede-Class Shuttle", "Navette de classe Sheathipede");
   exportObj.renameShip("Quadjumper", "Quad jumper");
   exportObj.renameShip("Firespray-31", "Vaisseau de Patrouille de classe Firespray");
   exportObj.renameShip("TIE Fighter", "Chasseur TIE/ln");
@@ -7523,6 +7525,7 @@ exportObj.cardLoaders.Magyar = function() {
   exportObj.renameShip("YT-2400", "YT-2400 Light Freighter");
   exportObj.renameShip("Auzituck Gunship", "Auzituck Gunship");
   exportObj.renameShip("Kihraxz Fighter", "Kihraxz Fighter");
+  exportObj.renameShip("Sheathipede-Class Shuttle", "Sheathipede-class Shuttle");
   exportObj.renameShip("Quadjumper", "Quadrijet Transfer Spacetug");
   exportObj.renameShip("Firespray-31", "Firespray-class Patrol Craft");
   exportObj.renameShip("TIE Fighter", "TIE/ln Fighter");
